@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(background.webp);
+    background-size: cover;
+    background-position: center;
+    user-select: none;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center>* {
+    position: absolute;
+}
+#card {
+    width: 90vmin;
+    height: 90vmin;
+}
+.ring {
+    border-radius: 100%;
+}
+#outer {
+    width: 75vmin;
+    height: 75vmin;
+    outline: 1px solid #FFFFFF80;
+}
+#inner {
+    width: 30vmin;
+    height: 30vmin;
+    border: 15vmin solid #00104080;
+}
+#centre-a {
+    width: 6vmin;
+    height: 6vmin;
+    border: 2vmin dashed #FFFFFF80;
+    /* animation: rotate 500ms linear 0s infinite; */
+}
+#centre-b {
+    width: 0vmin;
+    height: 0vmin;
+    border: 5vmin dashed transparent;
+    border-top-color: #FFFFFF80;
+    border-bottom-color: #FFFFFF80;
+    /* animation: rotate 1s linear 0s infinite reverse; */
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.scale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scale>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.large-scale-mark-group {
+    width: 1vmin;
+    height: 70vmin;
+}
+.large-scale-mark {
+    height: 7vmin;
+    background-color: #FFFFFF80;
+}
+.small-scale-mark-group {
+    width: 0.3vmin;
+    height: 70vmin;
+}
+.small-scale-mark {
+    height: 4vmin;
+    background-color: white;
+}
+.head-background {
+    width: calc(100% - 10vmin);
+    height: calc(100% - 10vmin);
+    border: 5vmin solid transparent;
+    border-radius: 100%;
+}
+.head-ring {
+    width: calc(100% - 5.25vmin);
+    height: calc(100% - 5.25vmin);
+    border: 0.5vmin solid transparent;
+    border-top-color: #FFFFFF80;
+    border-radius: 100%;
+}
+.head-head {
+    width: 0.3vmin;
+}
+.head-head-head {
+    height: 7vmin;
+    background-color: white;
+}
+#hour {
+    width: 30vmin;
+    height: 30vmin;
+    /* animation: rotate 60s linear 0s infinite; */
+}
+#hour-head {
+    height: calc(100% + 4vmin);
+}
+#hour-background {
+    border-top-color: #FFFFFF80;
+}
+#hour-ring {
+    border-top-color: #00104080;
+}
+#minute {
+    width: 55vmin;
+    height: 55vmin;
+    /* animation: rotate 60s linear 0s infinite; */
+}
+#minute-head {
+    height: calc(100% + 2vmin);
+}
+#second {
+    width: 85vmin;
+    height: 85vmin;
+    /* animation: rotate 60s linear 0s infinite; */
+}
+#second-background {
+    border-top-color: #FFFFFF80;
+}
+#second-head {
+    height: calc(100%);
+}
+#time {
+    color: white;
+    /* -webkit-text-stroke: 0.2vmin white; */
+    font-size: 5vmin;
+    font-family: "霞鹜文楷等宽数字";
+}
+@font-face{
+    font-family: "霞鹜文楷等宽数字";
+    src : url(font.ttf);
+}

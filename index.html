@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>时钟</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/vue/2.7.0/vue.min.js"></script>
+    </head>
+    <body>
+        <div id="card" class="center">
+            <div id="outer" class="ring"></div>
+            <div id="inner" class="ring"></div>
+            <div id="centre-a" class="ring"></div>
+            <div id="centre-b" class="ring"></div>
+            <div id="scale" class="center">
+                <div id="large-scale" class="scale center">
+                    <div class="large-scale-mark-group" v-for="n in 6" :style="`transform: rotate(${30 * n}deg);`">
+                        <div class="large-scale-mark"></div>
+                        <div class="large-scale-mark"></div>
+                    </div>
+                </div>
+                <div id="small-scale" class="scale center">
+                    <div class="small-scale-mark-group" v-for="n in 30" :style="`transform: rotate(${6 * n}deg);`">
+                        <div class="small-scale-mark"></div>
+                        <div class="small-scale-mark"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="head-group" class="center">
+                <div v-for="type in ['hour', 'minute', 'second']" :id="type" class="head center">
+                    <div :id="`${type}-background`" class="head-background"></div>
+                    <div :id="`${type}-ring`" class="head-ring"></div>
+                    <div :id="`${type}-head`" class="head-head">
+                        <div :id="`${type}-head-head`" class="head-head-head"></div>
+                    </div>
+                </div>
+                <div id="time">08:00:00</div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
