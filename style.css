@@ -94,7 +94,6 @@ body {
     width: calc(100% - 5.25vmin);
     height: calc(100% - 5.25vmin);
     border: 0.5vmin solid transparent;
-    border-top-color: #FFFFFF80;
     border-radius: 100%;
 }
 .head-head {
@@ -123,6 +122,9 @@ body {
     height: 55vmin;
     /* animation: rotate 60s linear 0s infinite; */
 }
+#minute-ring {
+    border-top-color: #FFFFFF80;
+}
 #minute-head {
     height: calc(100% + 2vmin);
 }
@@ -133,6 +135,9 @@ body {
 }
 #second-background {
     border-top-color: #FFFFFF80;
+}
+#second-ring {
+    border-top-color: #00104080;
 }
 #second-head {
     height: calc(100%);
