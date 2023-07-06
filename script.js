@@ -12,7 +12,7 @@ function update() {
     var hour = date.getHours()
     var secondDeg = second * 6
     var minuteDeg = minute * 6 + secondDeg / 60
-    var hourDeg = hour * 30 + minuteDeg / 60
+    var hourDeg = hour * 30 + minuteDeg / 12
     var strSecond = second.toString().padStart(2, '0')
     var strMinute = minute.toString().padStart(2, '0')
     var strHour = hour.toString().padStart(2, '0')
