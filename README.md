@@ -1,3 +1,3 @@
 # 时钟
 
-[链接](clock.slightning.tk)
+[链接](https://clock.slightning.tk)
