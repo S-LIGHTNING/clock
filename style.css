@@ -2,7 +2,6 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 .center>* {
     position: absolute;
@@ -22,6 +22,7 @@ body {
 #card {
     width: 90vmin;
     height: 90vmin;
+    overflow: hidden;
 }
 .ring {
     border-radius: 100%;
