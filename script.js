@@ -5,6 +5,22 @@ new Vue({
     el: '#head-group'
 })
 
+
+$(document).on("mousemove", function() {
+    var now = new Date().getTime()
+    $("body").removeClass("cursor-hide")
+    setTimeout(function() {
+        (function(time) {
+            console.log(time)
+            console.log(lastCursorUpdateTime)
+            if (time == lastCursorUpdateTime) {
+                $("body").addClass("cursor-hide")
+            }
+        })(now)
+    }, 3000)
+    lastCursorUpdateTime = now
+})
+
 function update() {
     var date = new Date()
     var second = date.getSeconds()
@@ -25,6 +41,5 @@ function update() {
     $("#centre-a").css("transform", `rotate(${centreDeg}deg)`)
     $("#centre-b").css("transform", `rotate(${-centreDeg}deg)`)
 }
-
 update()
 setInterval(update, 1000)
