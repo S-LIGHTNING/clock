@@ -11,8 +11,6 @@ $(document).on("mousemove", function() {
     $("body").removeClass("cursor-hide")
     setTimeout(function() {
         (function(time) {
-            console.log(time)
-            console.log(lastCursorUpdateTime)
             if (time == lastCursorUpdateTime) {
                 $("body").addClass("cursor-hide")
             }
